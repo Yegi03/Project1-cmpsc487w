@@ -45,6 +45,7 @@ The **SUN Lab Access System** is a Python-based project designed to manage and t
     - `65654_access_report.pdf`: Example generated PDF
   - `requirements.txt`: Lists the Python dependencies required to run the project
   - `README.md`: This file
+  - `database_documentation.md` : This file has detaled information of database 
   - `.gitignore`: Git ignore file to exclude unnecessary files
 
 ## Setup and Installation
@@ -94,29 +95,14 @@ The system provides several features for administrators:
 - **Generate Reports**: Admins can generate a detailed **PDF report** for any student. The report includes the student’s current **status** and **access history**, making it useful for tracking or record-keeping purposes.
 
 ---
+## Database Overview
 
-## Database Documentation
+The SUN Lab Access System uses an SQLite database to manage user data and access records. 
 
-### Tables
+- **users table**: Tracks users, their roles (e.g., student, staff), and their current status (active or suspended).
+- **access_records table**: Logs each instance when a user accesses the lab, recording their student ID and the timestamp.
 
-The system uses two main tables to manage data:
-
-1. **users**:
-   - `user_id`: Auto-incrementing primary key.
-   - `student_id`: A unique identifier for each student.
-   - `role`: The role of the user (e.g., student, faculty, staff, janitor).
-   - `status`: Indicates whether the user is **active** or **suspended**.
-
-2. **access_records**:
-   - `id`: Auto-incrementing primary key.
-   - `student_id`: Links to the `student_id` in the `users` table.
-   - `timestamp`: Records the exact time when the student accessed the lab.
-
-### Notes
-
-- The `users` table keeps track of the current status of students, allowing the system to block or allow access as needed.
-- The `access_records` table stores detailed access logs, including the **student ID** and the **timestamp** for every entry or exit.
-- Records are stored in the system for up to **5 years** to ensure comprehensive data availability.
+For detailed database structure and relationships, refer to the [Database Documentation](database_documentation.md).
 
 ---
 
