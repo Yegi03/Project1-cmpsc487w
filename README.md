@@ -40,9 +40,9 @@ The **SUN Lab Access System** is a Python-based project designed to manage and t
     - `screenshot3.png`: Example screenshot
     - `screenshot4.png`: Example screenshot 
     - `example_run.mp4`: Example video demo of system
-    - '12345_access_report.pdf' : Example generated PDF
-    - '88888_access_report.pdf' : Example generated PDF
-    - '65654_access_report.pdf' : Example generated PDF
+    - `12345_access_report.pdf` : Example generated PDF
+    - `88888_access_report.pdf` : Example generated PDF
+    - `65654_access_report.pdf`: Example generated PDF
   - `requirements.txt`: Lists the Python dependencies required to run the project
   - `README.md`: This file
   - `.gitignore`: Git ignore file to exclude unnecessary files
