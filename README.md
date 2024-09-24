@@ -1,5 +1,6 @@
 # SUN Lab Access System
 
+
 ## Overview
 
 The **SUN Lab Access System** is a Python-based project designed to manage and track access to the **Student Unix Network (SUN) Lab**. This system allows the lab to record student ID numbers and timestamps when students swipe their cards to enter or exit the lab. The system also provides a graphical user interface (GUI) for administrators to search and browse student access records, manage user statuses (activate, suspend, reactivate), and generate PDF reports.
