@@ -1,0 +1,15 @@
+# SUN Lab Access System
+
+## Overview
+This is a Python desktop application to manage access records for the SUN Lab. It tracks student access via card swipes and allows admin users to view access history, update user statuses, and generate reports.
+
+## Features
+- Relational database (SQLite) for storing access records.
+- Admin interface using Tkinter to search access history.
+- Ability to activate, suspend, and reactivate user IDs.
+- Extended feature: Generate PDF reports of lab access records.
+
+## How to Run
+
+1. Clone the repository.
+2. Install dependencies:
